@@ -9,7 +9,7 @@ spec:
   # Since this is for a namespace repository, the format is unstructured
   sourceFormat: unstructured
   git:
-    repo: tenant-a-config
+    repo: https://github.com/brandon-blackline/tenant-a-config
     branch: main
     dir: configs
     auth: none
