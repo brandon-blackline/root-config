@@ -1,5 +1,5 @@
-# ROOT_SOURCE/namespaces/NAMESPACE/namespace.yaml
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: tenant-a
+## ROOT_SOURCE/namespaces/NAMESPACE/namespace.yaml
+#apiVersion: v1
+#kind: Namespace
+#metadata:
+#  name: tenant-a
