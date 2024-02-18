@@ -31,6 +31,7 @@ metadata:
   name: iampolicy
   annotations:
     config.kubernetes.io/depends-on: resourcemanager.cnrm.cloud.google.com/namespaces/config-control/Folder/home-folder
+  namespace: config-control
 spec:
   resourceRef:
     kind: Folder
