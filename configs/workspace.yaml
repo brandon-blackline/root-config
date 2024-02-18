@@ -2,28 +2,28 @@ apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
 kind: Folder
 metadata:
   labels:
-    label-one: "ai-team-a"
-  name: ai-team-a
+    label-one: "uid-123-folder"
+  name: uid-123-folder
   namespace: config-control
 spec:
-  displayName: ai-team-a
+  displayName: uid-123-folder
   folderRef:
     external: "1035593700102"
----
-apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
-kind: Project
-metadata:
-  annotations:
-    cnrm.cloud.google.com/auto-create-network: "true"
-    config.kubernetes.io/depends-on: resourcemanager.cnrm.cloud.google.com/namespaces/config-control/Folder/ai-team-a
-  labels:
-    label-one: "ai-team-a"
-  name: ai-team-lara-114
-  namespace: config-control
-spec:
-  name: ai-team-lara-aaa
-  billingAccountRef:
-    external: "017B54-6990FF-F99DF9"
-  folderRef:
-    name: ai-team-a
-    namespace: config-control
+#---
+#apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
+#kind: Project
+#metadata:
+#  annotations:
+#    cnrm.cloud.google.com/auto-create-network: "true"
+#    config.kubernetes.io/depends-on: resourcemanager.cnrm.cloud.google.com/namespaces/config-control/Folder/ai-team-a
+#  labels:
+#    label-one: "ai-team-a"
+#  name: ai-team-lara-114
+#  namespace: config-control
+#spec:
+#  name: ai-team-lara-aaa
+#  billingAccountRef:
+#    external: "017B54-6990FF-F99DF9"
+#  folderRef:
+#    name: ai-team-a
+#    namespace: config-control
