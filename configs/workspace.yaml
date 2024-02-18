@@ -22,7 +22,7 @@ metadata:
 spec:
   displayName: home-folder
   folderRef:
-    external: uid-123-folder
+    name: uid-123-folder
     namespace: config-control
 #---
 #apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
