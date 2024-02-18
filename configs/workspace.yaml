@@ -29,6 +29,8 @@ apiVersion: iam.cnrm.cloud.google.com/v1beta1
 kind: IAMPolicy
 metadata:
   name: iampolicy
+  annotations:
+    config.kubernetes.io/depends-on: resourcemanager.cnrm.cloud.google.com/namespaces/config-control/Folder/home-folder
 spec:
   resourceRef:
     kind: Folder
