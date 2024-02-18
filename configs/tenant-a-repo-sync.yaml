@@ -1,0 +1,15 @@
+#ROOT_SOURCE/namespaces/NAMESPACE/repo-sync.yaml
+apiVersion: configsync.gke.io/v1beta1
+kind: RepoSync
+metadata:
+  name: tenant-a
+  namespace: tenant-a
+spec:
+  sourceType: git
+  # Since this is for a namespace repository, the format is unstructured
+  sourceFormat: unstructured
+  git:
+    repo: tenant-a-config
+    branch: main
+    dir: configs
+    auth: none
