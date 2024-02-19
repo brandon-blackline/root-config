@@ -62,7 +62,7 @@ spec:
 apiVersion: iam.cnrm.cloud.google.com/v1beta1
 kind: IAMPolicy
 metadata:
-  name: iampolicy-folder-viewer
+  name: iampolicy-folder-admin
   annotations:
     config.kubernetes.io/depends-on: resourcemanager.cnrm.cloud.google.com/namespaces/config-control/Folder/home-folder
   namespace: config-control
@@ -74,7 +74,7 @@ spec:
   bindings:
     - members:
         - user:uid.123@evilmachine.net
-      role: roles/resourcemanager.folderViewer
+      role: roles/resourcemanager.folderAdmin
 #---
 #apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
 #kind: Project
