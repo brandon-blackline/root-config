@@ -36,7 +36,6 @@ spec:
   resourceRef:
     kind: Folder
     name: home-folder
-    namespace: config-control
   bindings:
     - members:
         - user:uid.123@evilmachine.net
@@ -53,7 +52,6 @@ spec:
   resourceRef:
     kind: Folder
     name: home-folder
-    namespace: config-control
   bindings:
     - members:
         - user:uid.123@evilmachine.net
@@ -70,7 +68,6 @@ spec:
   resourceRef:
     kind: Folder
     name: home-folder
-    namespace: config-control
   bindings:
     - members:
         - user:uid.123@evilmachine.net
