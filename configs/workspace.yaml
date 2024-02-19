@@ -24,54 +24,54 @@ spec:
   folderRef:
     name: uid-123-folder
     namespace: config-control
-#---
-#apiVersion: iam.cnrm.cloud.google.com/v1beta1
-#kind: IAMPolicy
-#metadata:
-#  name: iampolicy-project-owner
-#  annotations:
-#    config.kubernetes.io/depends-on: resourcemanager.cnrm.cloud.google.com/namespaces/config-control/Folder/home-folder
-#  namespace: config-control
-#spec:
-#  resourceRef:
-#    kind: Folder
-#    name: home-folder
-#  bindings:
-#    - members:
-#        - user:uid.123@evilmachine.net
-#      role: roles/owner
-#---
-#apiVersion: iam.cnrm.cloud.google.com/v1beta1
-#kind: IAMPolicy
-#metadata:
-#  name: iampolicy-project-creator
-#  annotations:
-#    config.kubernetes.io/depends-on: resourcemanager.cnrm.cloud.google.com/namespaces/config-control/Folder/home-folder
-#  namespace: config-control
-#spec:
-#  resourceRef:
-#    kind: Folder
-#    name: home-folder
-#  bindings:
-#    - members:
-#        - user:uid.123@evilmachine.net
-#      role: roles/resourcemanager.projectCreator
-#---
-#apiVersion: iam.cnrm.cloud.google.com/v1beta1
-#kind: IAMPolicy
-#metadata:
-#  name: iampolicy-folder-admin
-#  annotations:
-#    config.kubernetes.io/depends-on: resourcemanager.cnrm.cloud.google.com/namespaces/config-control/Folder/home-folder
-#  namespace: config-control
-#spec:
-#  resourceRef:
-#    kind: Folder
-#    name: home-folder
-#  bindings:
-#    - members:
-#        - user:uid.123@evilmachine.net
-#      role: roles/resourcemanager.folderAdmin
+---
+apiVersion: iam.cnrm.cloud.google.com/v1beta1
+kind: IAMPolicy
+metadata:
+  name: iampolicy-project-owner
+  annotations:
+    config.kubernetes.io/depends-on: resourcemanager.cnrm.cloud.google.com/namespaces/config-control/Folder/home-folder
+  namespace: config-control
+spec:
+  resourceRef:
+    kind: Folder
+    name: home-folder
+  bindings:
+    - members:
+        - user:uid.123@evilmachine.net
+      role: roles/owner
+---
+apiVersion: iam.cnrm.cloud.google.com/v1beta1
+kind: IAMPolicy
+metadata:
+  name: iampolicy-project-creator
+  annotations:
+    config.kubernetes.io/depends-on: resourcemanager.cnrm.cloud.google.com/namespaces/config-control/Folder/home-folder
+  namespace: config-control
+spec:
+  resourceRef:
+    kind: Folder
+    name: home-folder
+  bindings:
+    - members:
+        - user:uid.123@evilmachine.net
+      role: roles/resourcemanager.projectCreator
+---
+apiVersion: iam.cnrm.cloud.google.com/v1beta1
+kind: IAMPolicy
+metadata:
+  name: iampolicy-folder-admin
+  annotations:
+    config.kubernetes.io/depends-on: resourcemanager.cnrm.cloud.google.com/namespaces/config-control/Folder/home-folder
+  namespace: config-control
+spec:
+  resourceRef:
+    kind: Folder
+    name: home-folder
+  bindings:
+    - members:
+        - user:uid.123@evilmachine.net
+      role: roles/resourcemanager.folderAdmin
 #---
 #apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
 #kind: Project
