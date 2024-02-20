@@ -1,14 +1,14 @@
-apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
-kind: Folder
-metadata:
-  labels:
-    label-one: "uid-123-folder"
-  name: uid-123-folder
-  namespace: config-control
-spec:
-  displayName: uid-123-folder
-  folderRef:
-    external: "1035593700102"
+#apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
+#kind: Folder
+#metadata:
+#  labels:
+#    label-one: "uid-123-folder"
+#  name: uid-123-folder
+#  namespace: config-control
+#spec:
+#  displayName: uid-123-folder
+#  folderRef:
+#    external: "1035593700102"
 #---
 #apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
 #kind: Folder
